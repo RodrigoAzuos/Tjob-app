@@ -118,7 +118,7 @@ public class PerfilFragment extends Fragment implements View.OnClickListener, Re
 
     @Override
     public void onRetrofitFailure(Throwable t) {
-        Snackbar snackbar = Snackbar.make(mRecyclerView, R.string.sem_conexao, Snackbar.LENGTH_INDEFINITE);
+        Snackbar snackbar = Snackbar.make(txtMach, R.string.sem_conexao, Snackbar.LENGTH_INDEFINITE);
         snackbar.show();
         mProgressBar.setVisibility(View.GONE);
 
