@@ -1,17 +1,12 @@
 package com.azapps.tjob_app.api;
 
 import android.content.Context;
-import android.util.Log;
 import android.widget.Toast;
 
-import com.azapps.tjob_app.Interfaces.LoginEndPoint;
 import com.azapps.tjob_app.Interfaces.PerfilEndPoint;
 import com.azapps.tjob_app.Interfaces.Retrofitable;
 import com.azapps.tjob_app.Interfaces.RetrofitableMetodos;
 import com.azapps.tjob_app.models.Perfil;
-import com.azapps.tjob_app.models.Usuario;
-import com.google.gson.Gson;
-import com.google.gson.JsonElement;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -31,11 +26,11 @@ public class APIservicePerfil extends APIservice {
 
     public APIservicePerfil(Context context) {
         super(context);
-        initEndPoists();
+        initEndPoints();
     }
 
     @Override
-    public void initEndPoists() {
+    public void initEndPoints() {
         perfilEndPoint = retrofit.create(PerfilEndPoint.class);
         perfis = new ArrayList<>();
 

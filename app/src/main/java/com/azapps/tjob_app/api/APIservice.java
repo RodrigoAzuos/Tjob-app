@@ -40,5 +40,5 @@ public abstract class APIservice {
                 .build();
     }
 
-    public abstract void initEndPoists();
+    public abstract void initEndPoints();
 }

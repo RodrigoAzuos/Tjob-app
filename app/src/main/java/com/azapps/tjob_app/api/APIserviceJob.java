@@ -31,11 +31,11 @@ public class APIserviceJob extends APIservice {
 
     public APIserviceJob(Context context) {
         super(context);
-        initEndPoists();
+        initEndPoints();
     }
 
     @Override
-    public void initEndPoists() {
+    public void initEndPoints() {
         mJobEndPoint = retrofit.create(JobEndPoint.class);
         jobs = new ArrayList<JobSimples>();
     }

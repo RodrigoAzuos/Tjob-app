@@ -23,12 +23,12 @@ public class APIserviceComentario extends APIservice{
 
     public APIserviceComentario(Context context) {
         super(context);
-        initEndPoists();
+        initEndPoints();
     }
 
 
     @Override
-    public void initEndPoists() {
+    public void initEndPoints() {
         mComentarioEndPoint = retrofit.create(ComentarioEndPoint.class);
     }
 

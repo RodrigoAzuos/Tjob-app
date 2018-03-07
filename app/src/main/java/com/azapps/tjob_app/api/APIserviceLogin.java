@@ -1,14 +1,11 @@
 package com.azapps.tjob_app.api;
 
 import android.content.Context;
-import android.widget.Toast;
 
 import com.azapps.tjob_app.Interfaces.LoginEndPoint;
 import com.azapps.tjob_app.Interfaces.Retrofitable;
 import com.azapps.tjob_app.models.Usuario;
 import com.azapps.tjob_app.modelsApi.Token;
-import com.azapps.tjob_app.ui.BottomMenuActivity;
-import com.azapps.tjob_app.util.PrenferencesUltil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,11 +24,11 @@ public class APIserviceLogin extends APIservice {
 
     public APIserviceLogin(Context context) {
         super(context);
-        initEndPoists();
+        initEndPoints();
     }
 
     @Override
-    public void initEndPoists() {
+    public void initEndPoints() {
         loginEndPoint = retrofit.create(LoginEndPoint.class);
         usuarios = new ArrayList<Usuario>();
     }
