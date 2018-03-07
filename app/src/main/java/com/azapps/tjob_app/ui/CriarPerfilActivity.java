@@ -200,6 +200,7 @@ public class CriarPerfilActivity extends AppCompatActivity implements View.OnCli
             Toast.makeText(this, R.string.perfil_criado_sucesso, Toast.LENGTH_SHORT).show();
             mPrenferencesUltil.storeLong(ConstantsUtil.PERFIL_ID, perfilResponse.getId());
             startActivity(new Intent(this, BottomMenuActivity.class));
+            finish();
         }else {
             Toast.makeText(this, "Status: " + status, Toast.LENGTH_SHORT).show();
             mProgressBar.setVisibility(View.GONE);
