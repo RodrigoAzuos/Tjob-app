@@ -82,7 +82,7 @@ public class PostJobActivity extends AppCompatActivity implements RetrofitableMe
             mJobSimples.setTitulo(edtTitulo.getText().toString());
             mJobSimples.setDescricao(edtDescricao.getText().toString());
             mJobSimples.setCriador(perfilId);
-            mJobSimples.setPublico(true);
+            mJobSimples.setPublico(false);
             if (mCheckBox.isChecked()){
                 mJobSimples.setPublico(true);
             }
@@ -104,10 +104,11 @@ public class PostJobActivity extends AppCompatActivity implements RetrofitableMe
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.salvar_cadastro_usuario:
-                if (jobId == -1)
-                    if (criarJob())
-                        mAPIserviceJob.postJob(this,this,mJobSimples);
-                        mProgressBar.setVisibility(View.VISIBLE);
+                if (isValid()){
+                    criarJob();
+                    mAPIserviceJob.postJob(this,this,mJobSimples);
+                    mProgressBar.setVisibility(View.VISIBLE);
+                }
                 break;
             case  R.id.cancelar_cadastro:
                 finish();

@@ -5,7 +5,6 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputType;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -21,10 +20,7 @@ import com.azapps.tjob_app.api.APIserviceLogin;
 import com.azapps.tjob_app.models.Usuario;
 import com.azapps.tjob_app.util.ConstantsUtil;
 import com.azapps.tjob_app.util.PrenferencesUltil;
-import com.google.gson.Gson;
-import com.google.gson.JsonElement;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class CadastroUsuarioActivity extends AppCompatActivity  implements View.OnClickListener, Retrofitable{
@@ -127,8 +123,8 @@ public class CadastroUsuarioActivity extends AppCompatActivity  implements View.
         usuario = new Usuario();
         usuario.setUsername(edtUsuario.getText().toString());
         usuario.setPassword(edtSenha.getText().toString());
-        usuario.setFirst_name(edtPrimeiroNome.getText().toString());
-        usuario.setLast_name(edtSegundoNome.getText().toString());
+        usuario.setFirstName(edtPrimeiroNome.getText().toString());
+        usuario.setLastName(edtSegundoNome.getText().toString());
         usuario.setEmail(edtEmail.getText().toString());
 
     }

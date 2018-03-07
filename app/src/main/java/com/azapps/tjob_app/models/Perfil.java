@@ -14,7 +14,7 @@ public class Perfil {
     @SerializedName("data_nascimento")
     private String dataNascimento;
     private String sexo;
-    @SerializedName("perfi_profissional")
+    @SerializedName("perfil_profissional")
     private String perfiProfissional;
     private String gitHub;
     private String experiencia;

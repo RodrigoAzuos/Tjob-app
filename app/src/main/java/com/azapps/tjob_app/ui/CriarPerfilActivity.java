@@ -137,7 +137,9 @@ public class CriarPerfilActivity extends AppCompatActivity implements View.OnCli
     }
 
     public void criarPerfil(){
-        endereco.setCep(Float.parseFloat(edtCep.getText().toString()));
+        if(!edtCep.getText().toString().isEmpty())
+            endereco.setCep(Float.parseFloat(edtCep.getText().toString()));
+
         endereco.setCidade(edtCidade.getText().toString());
         endereco.setEstado(edtEstado.getText().toString());
         endereco.setLogradouro(edtLogradoudo.getText().toString());

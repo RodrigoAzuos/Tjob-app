@@ -16,6 +16,7 @@ import com.azapps.tjob_app.R;
 import com.azapps.tjob_app.api.APIserviceJob;
 import com.azapps.tjob_app.api.APIservicePerfil;
 import com.azapps.tjob_app.models.Perfil;
+import com.azapps.tjob_app.modelsApi.MensagemApi;
 import com.azapps.tjob_app.util.ConstantsUtil;
 import com.azapps.tjob_app.util.PrenferencesUltil;
 
@@ -73,6 +74,7 @@ public class PerfilDetalhadoActivity extends AppCompatActivity implements View.O
     public void onClick(View v) {
         if (v.getId() == R.id.btn_perfil_detalhado_selecionar){
             mAPIserviceJob.match(this, jobId, perfilId);
+            mProgressBar.setVisibility(View.VISIBLE);
         }
     }
 
@@ -90,7 +92,13 @@ public class PerfilDetalhadoActivity extends AppCompatActivity implements View.O
 
     @Override
     public void onRetrofitCreate(int status, Object object) {
-
+        mProgressBar.setVisibility(View.GONE);
+        MensagemApi mensagemApi = (MensagemApi) object;
+        if(status >= 200 && status <300){
+            Toast.makeText(this, " " + mensagemApi.getMensagem(), Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(this, " " + mensagemApi.getMensagem(), Toast.LENGTH_SHORT).show();
+        }
     }
 
     @Override

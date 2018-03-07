@@ -11,15 +11,6 @@ import java.util.List;
 
 public class JobSimples {
 
-//    "id": 1,
-//            "status": "aberto",
-//            "titulo": "Desenvolvedor java",
-//            "descricao": "Projeto Java Web",
-//            "criador": 4,
-//            "nome_criador": "elane souza",
-//            "publico": true,
-//            "curtidas": []
-
     private long id;
     private String status;
     private String titulo;
