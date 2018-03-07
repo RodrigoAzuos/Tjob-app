@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Tjob-app</string>
+    <string name="usuario_login">Usuário</string>
+    <string name="senha_login">Senha</string>
+    <string name="cadastre_se_login">Cadastre-se</string>
+    <string name="btn_login">Login</string>
+    <string name="primeiro_nome">Primeiro nome</string>
+    <string name="Segundo_nome">Segundo nome</string>
+    <string name="e_mail">E-mail</string>
+    <string name="confirma_senha_cadastro">Confirma senha</string>
+    <string name="salvar_cadastro">Salvar</string>
+    <string name="cancelar_cadastro_usuario">Cancelar</string>
+    <string name="usuario_criado">Usuário criado com sucesso!</string>
+    <string name="sem_conexao">Sem conexão</string>
+    <string name="dados_incorretos_cadastro_user">Dados incorretos</string>
+    <string name="falha_na_conexao">falha na conexão!</string>
+    <string name="git_hub_casastro">GitHub</string>
+    <string name="telefone_cadastro">Telefone</string>
+    <string name="idade_cadastro_perfil">Data de nascimento</string>
+    <string name="perfil_profissional">Perfil profissional</string>
+    <string name="experiencias_profissional">Experiencias Profissional</string>
+    <string name="logradouro_cadastro">Logradouro</string>
+    <string name="endereco_cadastro_tv">Endereço</string>
+    <string name="cep_cadastro">CEP</string>
+    <string name="estado_cadastro">Estado</string>
+    <string name="cidade_cadastro">Cidade</string>
+    <string name="perfil_cadastro_tv">Perfil</string>
+    <string name="preecha_os_campos">Preencha todos os campos</string>
+    <string name="campo_obrigatorio">Este campo é obrigátorio!</string>
+    <string name="titulo_spiner_sexo">Sexo</string>
+    <string name="dados_incorretos">Usuário ou senha incorretos</string>
+    <string name="perfil_criado_sucesso">Perfil criado com sucesso!</string>
+    <string name="Job_curtido">Job curtido!</string>
+    <string name="Erro_ao_curtir">Erro ao curtir.</string>
+    <string name="deslike">Retirado da lista de curtidos!</string>
+    <string name="deslike_job">Retidado da lista de curtidas.</string>
+    <string name="job_sem_comentario">Esta publicação não possue comentarios!</string>
+    <string name="comentario_postado">Comentario postado</string>
+    <string name="job_cadastro_titulo">Titulo</string>
+    <string name="descricao_job_cadastro">Descrição</string>
+    <string name="erro_post">Erro ao postar</string>
+    <string name="macth_s">Macth\'s</string>
+    <string name="job_curtidos">Jobs curtidos</string>
+    <string name="editar_informa_es">Editar informações</string>
+    <string name="remover">Remover</string>
+    <string name="editar">Editar</string>
+    <string name="confirmar_edicao">Confirmar</string>
+    <string name="cancelar_edicao">Cancelar</string>
+    <string name="sair">Sair</string>
+
+    <string-array name="item_spinner">
+        <item>Sexo</item>
+        <item>Masculino</item>
+        <item>Feminino</item>
+    </string-array>
+</resources>

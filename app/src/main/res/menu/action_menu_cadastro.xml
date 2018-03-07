@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/salvar_cadastro_usuario"
+        android:title="@string/salvar_cadastro"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/cancelar_cadastro"
+        android:title="@string/cancelar_cadastro_usuario"
+        app:showAsAction="always"/>
+
+</menu>

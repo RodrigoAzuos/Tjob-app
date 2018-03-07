@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.azapps.tjob_app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.BottomMenuActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.LoginActivity" />
+        <activity
+            android:name=".ui.CadastroUsuarioActivity"
+            android:parentActivityName=".ui.LoginActivity" />
+        <activity
+            android:name=".ui.CriarPerfilActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity android:name=".controle.ControlerPerfilActivity" />
+        <activity android:name=".controle.ControlerUserActivity" />
+        <activity
+            android:name=".ui.ComentarioJobActivity"
+            android:parentActivityName=".ui.BottomMenuActivity" />
+        <activity android:name=".ui.PostJobActivity" />
+        <activity
+            android:name=".ui.DetalheJobActivity"
+            android:parentActivityName=".ui.BottomMenuActivity" />
+        <activity android:name=".ui.PerfilDetalhadoActivity" />
+        <activity android:name=".ui.MeusMatchesActivity" />
+        <activity android:name=".ui.MinhasCurtidasActivity"></activity>
+    </application>
+
+</manifest>

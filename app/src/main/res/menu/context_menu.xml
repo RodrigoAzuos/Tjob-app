@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/context_editar"
+        android:title="@string/editar"
+        android:orderInCategory="10">
+    </item>
+
+    <item
+        android:id="@+id/context_remover"
+        android:title="@string/remover"
+        android:orderInCategory="20"></item>
+</menu>
